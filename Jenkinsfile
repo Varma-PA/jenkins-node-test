@@ -23,6 +23,7 @@ pipeline{
             steps{
                 echo 'Running Index file'
                 bat 'node index.js'
+                echo 'Completed'
             }
         }
 
