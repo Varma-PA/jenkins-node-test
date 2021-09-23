@@ -1,7 +1,7 @@
 pipeline{
     agent any
     tools{
-        NodeJS "node"
+        nodejs "NodeJS"
     }
     stages{
         stage('Check Node'){
