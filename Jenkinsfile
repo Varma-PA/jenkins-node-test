@@ -7,9 +7,17 @@ pipeline{
         stage('Check Node'){
             steps{
                 echo 'Checking Node JS'
-                echo %PATH%
-                sh 'npm config list'
+                bat 'node --version'
+                bat 'npm --version'
             }
         }
+
+        stage('Cloning Git'){
+            steps{
+                echo 'Cloning Git'
+                git branch: 'main', url: 'https://github.com/Varma-PA/jenkins-node-test'
+            }
+        }
+
     }
 }
