@@ -4,8 +4,7 @@ pipeline{
         stage('Check Node'){
             steps{
                 echo 'Checking Node JS'
-                node --version
-                npm --version
+                sh 'npm --version'
             }
         }
     }
