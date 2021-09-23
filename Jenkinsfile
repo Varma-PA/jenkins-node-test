@@ -7,7 +7,7 @@ pipeline{
         stage('Check Node'){
             steps{
                 echo 'Checking Node JS'
-                npm config list
+                sh 'npm config list'
             }
         }
     }
