@@ -19,5 +19,12 @@ pipeline{
             }
         }
 
+        stage('Running Main Index file'){
+            steps{
+                echo 'Running Index file'
+                bat 'node index.js'
+            }
+        }
+
     }
 }
